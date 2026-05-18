@@ -106,12 +106,22 @@ body {
 
 @media(max-width:700px){
 
-  .nav-links {
-    display: none;
+  .navbar {
+    width: 95%;
+    padding: 16px 14px;
   }
 
-  .navbar {
-    justify-content: center;
+  .nav-logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
   }
 
 }
@@ -1435,4 +1445,33 @@ section {
 .tool-card span {
   color: white;
   font-size: 15px;
+}
+/* MOBILE NAVBAR FIX */
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    width: 95%;
+    padding: 14px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
 }
