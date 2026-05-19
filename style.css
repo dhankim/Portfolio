@@ -1671,6 +1671,10 @@ section {
     overflow: hidden;
     transition: 0.3s ease;
     backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .qa-card:hover {
@@ -1681,8 +1685,8 @@ section {
 
 .qa-card img {
     width: 100%;
-    height: 320px;
-    object-fit: contain;
+    height: 220px;
+    object-fit: cover;
     background: #000;
 }
 
